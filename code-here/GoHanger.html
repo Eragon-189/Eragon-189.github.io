@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoHang3r</title>
+  <style>
+
+.Iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+}
+</style>
+</head>
+<body>
+    <div id="iframeContainer">
+        <iframe src="" class="Iframe" id="iframe"></iframe>
+        </div>
+<script>
+let isNotWorking = true;
+let URL = ["https://d2mxyt8j2p6hed.cloudfront.net","https://d1az4vbft8z2px.cloudfront.net"]
+let styleSheet = document.getElementById()
+window.onbeforeunload = confirmExit;
+function confirmExit(e)
+{
+    var $element = $(e.target.activeElement);
+    if ($element.prop("tagName") !== "A") {
+        return "don't leave";
+    }
+}
+for(let i = 0; i < URL.length; i++){
+    try{
+        document.getElementById("iframe").src = URL[i]
+    }catch (e){
+        console.error(e)
+    }
+}
+if(document.getElementById("iframe").src = ""){
+        let container = document.getElementById("iframeContainer")
+        container.style.backgroundColor = "#FFFFFF"
+        container.innerText = "Error, please try again later"
+    }
+</script>
+</body>  
+</html>
