@@ -21,19 +21,16 @@
 <body>
     <div id="iframeContainer">
         <iframe src="" class="Iframe" id="iframe"></iframe>
-        </div>
+    </div>
 <script>
 let isNotWorking = true;
 let URL = ["https://d2mxyt8j2p6hed.cloudfront.net","https://d1az4vbft8z2px.cloudfront.net"]
 let styleSheet = document.getElementById()
-window.onbeforeunload = confirmExit;
-function confirmExit(e)
-{
-    var $element = $(e.target.activeElement);
-    if ($element.prop("tagName") !== "A") {
-        return "don't leave";
-    }
+
+window.onbeforeunload = function(){
+return "";
 }
+
 for(let i = 0; i < URL.length; i++){
     try{
         document.getElementById("iframe").src = URL[i]
